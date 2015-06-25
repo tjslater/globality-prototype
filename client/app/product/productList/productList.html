@@ -1,0 +1,11 @@
+<div infinite-scroll="loadMore()" class="clearfix">
+    <div ng-repeat="product in products track by $index" class="small-12 medium-6 large-4 pull-left product-tile">
+        <a class="th" ui-sref="product.display({id: product._id})" data-reveal-id="myModal">
+            <img ng-src="{{product.thumbnail_url}}" class="image image-container"/>
+        </a>
+        <div class="small-12 medium-12 large-12 center-column clearfix">
+            <h5 class="subheader center-text">{{product.title}} | {{product.author}}</h5>
+            <p class="center-text blurb-small center-column">{{product.blurb | wordLimit: 32 }}... <a ui-sref="product.display({id: product._id})">learn more</a></p>
+        </div>
+    </div>
+</div>

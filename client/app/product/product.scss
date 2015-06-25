@@ -1,0 +1,22 @@
+.blurb-small{
+  font-size: 12px;
+  width: 80%;
+}
+
+.product-tile{
+min-height:550px;
+}
+
+.product-modal{
+  position: fixed;
+  width: 75%;
+  top: 12.5%;
+  left: 12.5%;
+  background-color: white;
+  box-shadow: 0px 0px 500px #111;
+}
+
+.close-modal-button{
+  margin-right: 1em;
+  margin-top: 1em;
+}

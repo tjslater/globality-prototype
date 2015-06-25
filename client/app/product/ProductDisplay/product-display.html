@@ -1,0 +1,13 @@
+
+<div class="product-modal clearfix">
+    <div class="small-12 medium-12 large-6 pull-left">
+        <img ng-src="{{item.thumbnail_url}}"/>
+    </div>
+    <div class="small-12 medium-12 large-4 pull-left large-offset-1">
+        <h2>{{item.title}}</h2>
+        <h3 class="subheader">{{item.author}}</h3>
+
+        <p class="blurb-small">{{item.blurb}}</p>
+    </div>
+    <a class="pull-right close-modal-button" ui-sref="product">Close</a>
+</div>
